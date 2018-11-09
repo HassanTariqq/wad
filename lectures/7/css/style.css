@@ -1,6 +1,19 @@
 #main {
     /* add CSS here */
+    max-width: max-content;
 }
 .pet {
     /* add CSS here */
+
+    border: 2px #fa0193 dashed ;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 14px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 14px 5px 0px rgba(0,0,0,0.26);
+    box-shadow: 10px 14px 5px 0px rgba(0,0,0,0.26);
+
+}
+
+.puppy
+{
+    padding: 20px  500px;
 }
