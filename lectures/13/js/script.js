@@ -25,13 +25,21 @@ var currentQuestion = 0;
 var correctAnswers = 0;
 var quizOver = false;
 displayCurrentQuestion();
-document.getElementById("quiz-message").style.display = 'none';
+document.getElementById("quiz-message").style.display = 'display';
 function displayNext() {
     /*Write your code here */
 }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+    var i=0;
+    var question = document.getElementById("question");
+    var choices = document.getElementById("choice-list");
+    question.innerText = questions[currentQuestion].question;
+    for(var i=0;i<4;i++)
+    {
+        choices.innerHTML += '<li>' +'<input type="radio" name="checked">' + questions[currentQuestion].choices[i]+'</li>';
+    }
+
 }
 
 function resetQuiz() {
