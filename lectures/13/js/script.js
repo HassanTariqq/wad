@@ -25,58 +25,13 @@ var currentQuestion = 0;
 var correctAnswers = 0;
 var quizOver = false;
 displayCurrentQuestion();
-document.getElementById("quiz-message").style.display = 'display';
-
-
-
+document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    if(currentQuestion<2) {
-        currentQuestion++;
-        displayCurrentQuestion();
-    }
-
-    else{
-        displayScore();
-    }
-
+    /*Write your code here */
 }
 
 function displayCurrentQuestion() {
-    var i = 0;
-    var question = document.getElementById("question");
-    var choices = document.getElementById("choice-list");
-    choices.innerHTML = ' ';
-
-    question.innerText = questions[currentQuestion].question;
-    var val = 0;
-
-    choices.innerHTML += '<li>' + '<input id="op1" type="radio" value=val name="checked" >' + questions[currentQuestion].choices[val] + '</li>';
-    val++;
-    choices.innerHTML += '<li>' + '<input id="op2" type="radio" value=val name="checked" >' + questions[currentQuestion].choices[val] + '</li>';
-    val++;
-    choices.innerHTML += '<li>' + '<input id="op3" type="radio" value=val name="checked" >' + questions[currentQuestion].choices[val] + '</li>';
-    val++;
-    choices.innerHTML += '<li>' + '<input id="op4" type="radio" value=val name="checked" >' + questions[currentQuestion].choices[val] + '</li>';
-
-    if (currentQuestion === 0){
-        if (document.getElementById("op1").checked) {
-            correctAnswers++;
-        }
-    }
-    if (currentQuestion === 1){
-        if (document.getElementById("op3").checked) {
-            correctAnswers++;
-        }
-    }
-    if (currentQuestion === 2){
-        if (document.getElementById("op2").checked) {
-            correctAnswers++;
-        }
-    }
-
-
-
-
+    /*Write your code here */
 }
 
 function resetQuiz() {
