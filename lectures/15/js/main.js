@@ -22,7 +22,7 @@ function deposit(e,val){
 
 }
 function withdraw(e,val)
-{ 
+{
     if(e.key=="Enter")
     {
         data.balance1-= parseInt(val);
