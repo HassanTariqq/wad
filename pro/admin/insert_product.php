@@ -12,6 +12,9 @@
             font-family: 'Old Standard TT', serif;
         }
     </style>
+    <?php
+    require "functions2.php"
+    ?>
 </head>
 <body>
 <div class="container">
@@ -39,11 +42,10 @@
                     </div>
                     <select class="form-control" id="pro_cat" name="pro_cat">
                         <option>Select Category</option>
-                        <option>Mobile</option>
-                        <option>Laptop</option>
-                        <option>Tablet</option>
-                        <option>Watch</option>
-                        <option>Camera</option>
+                        <?php
+                        getCat();
+                        ?>
+
                     </select>
                 </div>
             </div>
@@ -59,12 +61,9 @@
                     </div>
                     <select class="form-control" id="pro_brand" name="pro_brand">
                         <option>Select Brand</option>
-                        <option>Apple</option>
-                        <option>Samsung</option>
-                        <option>Oppo</option>
-                        <option>Dell</option>
-                        <option>HP</option>
-                        <option>Sony</option>
+                        <?php
+                        getBr();
+                        ?>
                     </select>
                 </div>
             </div>
