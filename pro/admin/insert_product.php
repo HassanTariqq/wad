@@ -13,13 +13,25 @@
         }
     </style>
     <?php
-    require "functions2.php"
+    require "functions2.php";
+    if(isset($_POST['insert_pro'])) {
+        $pro_title = $_POST['pro_title'];
+        $pro_cat = $_POST['pro_cat'];
+        $pro_brand = $_POST['pro_brand'];
+        $pro_price = $_POST['pro_price'];
+        $pro_desc = $_POST['pro_desc'];
+        $pro_keywords = $_POST['pro_keywords'];
+
+        $insertprod = "INSERT INTO products (pro_cat,pro_brand,pro_title,pro_price,pro_desc,pro_keywords)
+                  VALUES ('$pro_cat','$pro_brand','$pro_title','$pro_price','$pro_desc','$pro_keywords')";
+        mysqli_query($con, $insertprod);
+    }
     ?>
 </head>
 <body>
 <div class="container">
     <h1 class="text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-sm-inline"> Add New </span> Product </h1>
-    <form>
+    <form action="insert_product.php" method="post">
         <div class="row">
             <div class="">
                 <label for="pro_title" class="float-md-right"> <span class="d-sm-none d-md-inline"> Product </span> Title:</label>
