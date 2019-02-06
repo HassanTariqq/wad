@@ -33,7 +33,7 @@
                                        id="search-bar" name="search"
                                        placeholder="Find Mobile Phones, Laptops, and more..">
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary btn-lg" type="button"><i class="fas fa-search"></i></button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="submit"><i class="fas fa-search"></i></button>
                                 </div>
                             </div>
                         </form>
